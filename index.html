@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coopera - Cooperative Crypto Currency</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0a0f24;
+            color: white;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            background: #14213d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin-left: 20px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            background: #1d3557;
+            position: relative;
+            left: 0;
+            top: 0;
+            justify-content: flex-start;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            padding: 50px 20px;
+            background: url('crypto-theme-bg.jpg') no-repeat center center/cover;
+        }
+        .cta-button {
+            background-color: #fca311;
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #ffbe33;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+        .feature {
+            background: #1d3557;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+        .roadmap, .about, .tokenomics {
+            padding: 40px 20px;
+        }
+        footer {
+            background: #14213d;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .tokenomics canvas {
+            max-width: 400px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Coopera (CPRA)</h1>
+        <p>The Cooperative Cryptocurrency to Eliminate Poverty</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#airdrop">Airdrop</a>
+        <a href="#whitepaper">White Paper</a>
+        <a href="#mining">Mining</a>
+        <a href="#stake">Stake</a>
+        <a href="#tokenomics">Tokenomics</a>
+        <a href="#login">Login</a>
+    </nav>
+    
+    <section class="hero" id="home">
+        <h2>Join the Future of Financial Inclusion</h2>
+        <p>Coopera is designed to empower communities and provide economic opportunities for everyone.</p>
+        <button class="cta-button">Get Started</button>
+    </section>
+    
+    <section class="features">
+        <div class="feature">
+            <h3>Decentralized</h3>
+            <p>Powered by blockchain to ensure transparency and security.</p>
+        </div>
+        <div class="feature">
+            <h3>Community Driven</h3>
+            <p>Built by and for the people, creating economic equality.</p>
+        </div>
+        <div class="feature">
+            <h3>Eliminate Poverty</h3>
+            <p>Our mission is to provide financial access to the underprivileged.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure Transactions</h3>
+            <p>Advanced encryption ensures all transactions remain safe.</p>
+        </div>
+        <div class="feature">
+            <h3>Low Fees</h3>
+            <p>Enjoy minimal transaction fees, making Coopera accessible for everyone.</p>
+        </div>
+    </section>
+    
+    <section class="roadmap">
+        <h2>Roadmap</h2>
+        <p>Our journey towards a cooperative financial revolution.</p>
+        <ul>
+            <li>Q1 2025: Launch of Coopera Token (CPRA)</li>
+            <li>Q2 2025: Airdrop and Early Adoption Program</li>
+            <li>Q3 2025: Staking and Mining Features</li>
+            <li>Q4 2025: Global Partnerships & Expansion</li>
+        </ul>
+    </section>
+    
+    <section class="tokenomics" id="tokenomics">
+        <h2>Tokenomics</h2>
+        <p>Coopera Token (CPRA) distribution and allocation.</p>
+        <canvas id="tokenomicsChart"></canvas>
+        <script>
+            const ctx = document.getElementById('tokenomicsChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ["Community & Rewards", "Development & Security", "Marketing & Partnerships", "Reserve Fund", "Team & Advisors"],
+                    datasets: [{
+                        data: [50, 20, 15, 10, 5],
+                        backgroundColor: ["#fca311", "#ff5733", "#33ff57", "#3357ff", "#ff33a6"]
+                    }]
+                }
+            });
+        </script>
+    </section>
+    
+    <section class="about" id="whitepaper">
+        <h2>White Paper</h2>
+        <p>Download our white paper to learn more about Coopera's mission and technology.</p>
+        <button class="cta-button">Download</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Coopera. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
 
